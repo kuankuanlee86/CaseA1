@@ -1,0 +1,39 @@
+<div class="chat-widget" data-chat-widget>
+    <div id="chat-widget-panel" class="chat-widget__panel" data-chat-panel role="dialog" aria-labelledby="chat-widget-title" aria-hidden="true">
+        <div class="chat-widget__header">
+            <div class="chat-widget__title-wrap">
+                <span class="chat-widget__avatar" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.1-8 4.7V21h16v-2.3c0-2.6-3.6-4.7-8-4.7Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <div>
+                    <h2 class="chat-widget__title" id="chat-widget-title">線上小助手</h2>
+                    <p class="chat-widget__status">通常會立即回覆</p>
+                </div>
+            </div>
+            <button type="button" class="chat-widget__close" data-chat-close aria-label="關閉對話視窗">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="chat-widget__messages" data-chat-messages></div>
+
+        <form class="chat-widget__composer" data-chat-composer data-chat-form>
+            <label class="visually-hidden" for="chat-widget-input">預約日期</label>
+            <input id="chat-widget-input" class="chat-widget__input" data-chat-input type="text" placeholder="例如：2026/10/25" autocomplete="off" />
+            <button type="submit" class="chat-widget__send" data-chat-send>發送</button>
+        </form>
+    </div>
+
+    <button type="button" class="chat-widget__toggle" data-chat-toggle aria-expanded="false" aria-controls="chat-widget-panel" aria-label="開啟線上小助手">
+        <svg class="chat-widget__toggle-icon chat-widget__icon-chat" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 6.8A2.8 2.8 0 0 1 7.8 4h8.4A2.8 2.8 0 0 1 19 6.8v6.4A2.8 2.8 0 0 1 16.2 16H10l-4.2 3.2A.8.8 0 0 1 4.5 18.6V6.8Z" fill="currentColor"/>
+        </svg>
+        <svg class="chat-widget__toggle-icon chat-widget__icon-close" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+    </button>
+</div>
